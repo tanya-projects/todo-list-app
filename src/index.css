@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;500&display=swap');
+
+:root {
+  --text-color: #301d20;
+  --background: #f6f6f6;
+  --color-violet: #e2d6e9;
+  --color-violet-light: #ebe2f0;
+  --color-yellow: #ede39f;
+  --color-yellow-light: #f2ebbc;
+  --color-gray: #d3d0c7;
+  --color-gray-light: #dbd9d2;
+  --color-red: #d8b8b1;
+  --color-red-overdue: #d79d91;
+  --color-blue: #c4d8e2;
+  --color-green: #d6e3ca;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 22px;
+}
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background: var(--background);
+  color: var(--text-color);
+  padding: 1.5rem 2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1024px;
+  min-width: 360px;
+  height: 100vh;
+  margin: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
 }
