@@ -114,10 +114,12 @@ textarea {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  margin-top: 0.5rem;
 }
 .save__btn {
   background-color: var(--color-green);
   font-size: 0.8rem;
+  font-weight: normal;
 }
 .cancel__btn {
   background-color: transparent;
